@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sql-meu-webappcomdb-teste/databases/sqldb-meu-webAppcomDB-teste",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:WebAppcomDBContext",
+      "secretStore": "AzureAppSettings"
+    },
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/webappcomdbstorage",
+      "type": "storage.azure",
+      "connectionId": "StorageAccountConnectionStrings",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
